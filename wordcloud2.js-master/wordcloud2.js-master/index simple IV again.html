@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>wordcloud2.js - tag cloud/Wordle presentation on HTML5 canvas element</title>
+ 
+    <!-- Le styles -->
+
+
+
+
+</head>
+<body>
+
+     
+
+    <script src="./src/wordcloud2.js"></script>
+    <script>
+        'use strict';
+
+        
+        // Set the width and height
+
+
+
+
+
+        //var currentwebfontlink = $('#link-webfont');
+
+        if (!WordCloud.isSupported) {
+
+        }
+
+
+
+
+
+        var run = function run() {
+
+
+            var ccw = new Array(9);
+
+
+            var currentoption = loadExampleData();
+
+
+            for (var c = 1; c < 3; c++) {
+
+                ccw[c] = document.createElement('canvas')
+                document.body.appendChild(ccw[c]);
+                var ccwtx = ccw[c].getContext('2d');
+
+                var width = 400;
+                var height = 400;
+
+                ccw[c].style.position = "absolute";
+                ccw[c].width = width; //GetWidth();
+                ccw[c].height = height; //GetHeight();
+                ccw[c].style.top = (c-1) * width + "px";
+                ccw[c].style.left = (c-1) * height + "px";
+
+
+                var options = {};
+                if (currentoption) {
+                    options = (function evalOptions() {
+                        try {
+                            return eval('(' + currentoption + ')');
+                        } catch (error) {
+                            alert('The following Javascript error occurred in the option definition; all option will be ignored: \n\n' +
+                              error.toString());
+                            return {};
+                        }
+                    })();
+                }
+
+                options.gridSize = 8;
+                options.weightFactor = 3
+                options.origin[0] = width / 2;
+                options.origin[1] = height / 2;
+                options.fontFamily = 'Calibri';
+                options.color = '#D2691E';
+                options.backgroundColor = 'transparent';
+                options.clearCanvas = true;
+                options.click = function (item) { alert(item[0] + ' nr: ' + item[1]); }
+
+                // Put the word list into options
+
+                var list = [];
+
+                list.push(["groener", 5]);
+                list.push(["groen2", 7]);
+                list.push(["groen3", 5]);
+                list.push(["groener4", 10]);
+                list.push(["groen", 10]);
+                list.push(["groen2", 16]);
+                list.push(["groener3", 14]);
+                list.push(["groen4", 8]);
+                list.push(["groen", 10]);
+                list.push(["groen2", 12]);
+                list.push(["groen3", 30]);
+                list.push(["groen4", 9]);
+                list.push(["groendener", 10]);
+                list.push(["groen2", 20]);
+                list.push(["groen3", 12]);
+                list.push(["groen4", 12]);
+                options.list = list;
+
+
+                // All set, call the WordCloud();
+                WordCloud(ccw[c], options);
+
+            }
+        };
+
+        var loadExampleData = function loadExampleData() {
+
+            var currentoption;
+            var example = {
+
+                option: '{\n' +
+                        '  gridSize: 12,\n' +
+                        '  weightFactor: 3,\n' +
+                        '  origin: [400, 200],\n' +   //center of canvas!!
+                        '  clearCanvas: true,\n' +
+                        '  fontFamily: \'Calibri\',\n' +
+                        '  color: \'#f0f0c0\',\n' +
+                        '  click: function(item) {\n' +
+                        '    alert(item[0] + \': \' + item[1]);\n' +
+                        '  },\n' +
+                        '  backgroundColor: \'#001f00\'\n' +
+                        '}'
+            };
+
+
+
+            currentoption = example.option
+
+            return currentoption;
+
+        };
+
+       
+ 
+        run();
+
+
+    </script>
+</body>
+</html>

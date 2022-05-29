@@ -1,0 +1,19 @@
+﻿
+
+class Program
+{
+    static void example()
+    {
+        Example example = new Example();
+        example.Number = 5; // set { }
+         
+    }
+    static void Other()
+    {
+        AriadneStatistics p = new AriadneStatistics();
+        // MAKE THEM FORST NON STATIC!! THEM CREATE AN INSTANCE!!
+        //int nn = p.partN; 
+        //string sss = p.participants[1];
+        //int ii = p.getData(System.Guid.NewGuid());
+    }
+}

@@ -1,0 +1,99 @@
+ do
+            {
+
+
+                distL = 9999;
+                for (int i = 1; i < clusterN + 1; i++)
+                {
+                    for (int ii = i + 1; ii < clusterN + 1; ii++)
+                    {
+                        dist[i, ii] = Math.Pow(EigenVectorsR[1, i] - EigenVectorsR[1, ii], 2) + Math.Pow(EigenVectorsR[2, i] - EigenVectorsR[2, ii], 2);
+                        if (dist[i, ii] < distL)
+                        {
+                            distL = dist[i, ii]; iL = i; iiL = ii;
+                        }
+                    }
+                }
+
+                newX =   (EigenVectorsR[1, iL] + EigenVectorsR[1, iiL]) / 2;  //ONGEWOGEN
+                newY =   (EigenVectorsR[2, iL] + EigenVectorsR[2, iiL]) / 2;
+
+                //newX = EigenVectorsR[1, iL] - (EigenVectorsR[1, iL] - EigenVectorsR[1, iiL]) / 2;  //ONGEWOGEN
+                //newY = EigenVectorsR[2, iL] - (EigenVectorsR[2, iL] - EigenVectorsR[2, iiL]) / 2;
+                //newX = EigenVectorsR[1,iL] - ((EigenVectorsR[1,iL] - EigenVectorsR[1,iiL]) * clN[clusterStep, iiL] / (clN[clusterStep, iL] + clN[clusterStep, iiL])); //GEWOGEN
+                //newY = EigenVectorsR[2,iL] - ((EigenVectorsR[2,iL] - EigenVectorsR[2,iiL]) * clN[clusterStep, iiL] / (clN[clusterStep, iL] + clN[clusterStep, iiL]));
+                
+                 minI = 0;   minII = 0;
+                 for (int i = 1; i < clusterN + 1; i++)
+                 {
+                     clN[clusterStep + 1, i - minI] = clN[clusterStep, i];
+                     for (int c = 1; c < clN[clusterStep, i] + 1; c++)
+                     {
+                         clG[clusterStep + 1, i - minI, c] = clG[clusterStep, i, c];
+                     }
+                     if (i == iL || i == iiL) minI += 1;
+                 }
+                 for (int d = 1; d < dimensionN + 1; d++)
+                 {
+                     minI = 0;
+                     for (int i =  1; i < clusterN + 1; i++)
+                     {
+                         EigenVectorsR[d, i - minI] = EigenVectorsR[d, i];
+
+                         if (i == iL || i == iiL) minI += 1;
+                     }
+                 }
+                  
+                clusterStep+=1;
+                clusterN -= 1;
+                EigenVectorsR[1,clusterN ] = newX; EigenVectorsR[2,clusterN] = newY;
+
+                clN[clusterStep, clusterN] = clN[clusterStep-1, iL] + clN[clusterStep-1, iiL];
+                for (int c = 1; c < clN[clusterStep - 1, iL] + 1; c++)
+                {
+                    clG[clusterStep, clusterN, c] = clG[clusterStep - 1, iL, c];
+                }
+                for (int c = 1; c < clN[clusterStep - 1, iiL] + 1; c++)
+                {
+                    clG[clusterStep, clusterN, c + clN[clusterStep - 1, iL]] = clG[clusterStep - 1, iiL, c];
+                }
+        
+
+            } while (clusterN != 1);
+            
+            for (int s = 1; s < itemN + 1; s++)
+            {
+                for (int c = 1; c < clN[clusterStep - 1, iiL] + 1; c++)  
+                {
+                    //clG[s, c, 0] = clN[s, c];  //STORE CLUSTER N PER CLUSTER IN ZERO
+                }
+            }
+
+            //int[] cln4 = new int[4 ];
+            //int[,] cl4 = new int[4, itemN + 1];
+            //for (int c = 1; c < 4; c++)
+            //{
+            //    cln4[c ] = clN[57, c];   //bij 58 items twee clusters , by 59 1 ckuster
+            //    for (int i = 0; i < itemN+1; i++)
+            //    {
+            //        cl4[ c, i]= clG[57, c, i];
+            //    }
+            //}
+
+
+            for (int c = 1; c < clusterSaveN + 1; c++)
+            {
+                for (int g = 1; g < c + 1; g++)
+                {
+                    clusterItemN[c, g] = clN[itemN - c, g];
+                    for (int i = 1; i < clusterItemN[c, g] + 1; i++)
+                    {
+                        clusterItem[c, g, i] = clG[itemN-c, g, i];
+                    }
+                }
+
+            }
+
+            return 1;
+
+        }

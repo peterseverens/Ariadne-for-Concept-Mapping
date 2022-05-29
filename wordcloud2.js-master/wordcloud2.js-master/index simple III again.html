@@ -1,0 +1,228 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>wordcloud2.js - tag cloud/Wordle presentation on HTML5 canvas element</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le styles -->
+
+    
+     
+
+</head>
+<body>
+
+    <canvas id="Canvas"></canvas>
+ 
+    <script src="./src/wordcloud2.js"></script>
+    <script>
+        'use strict';
+
+        var currentoption = "";
+        var currentlist = "";
+        var currentfont = "";
+
+        // Set the width and height
+        var width = 800;  
+        var height = 400;  
+
+
+        var currentpixelratio = 0;
+
+        //var currentwebfontlink = $('#link-webfont');
+
+        if (!WordCloud.isSupported) {
+
+        }
+
+ 
+
+            //var $canvas = $('#canvas');
+            //var $canvasContainer = $('#canvas-container');
+
+
+
+ 
+
+            // Update the default value if we are running in a hdppx device
+            if (('devicePixelRatio' in window) &&
+                window.devicePixelRatio !== 1) {
+                currentpixelratio = window.devicePixelRatio;
+            }
+
+            //$canvas.on('wordcloudstop', function wordcloudstopped(evt) {
+            //});
+
+
+
+            var run = function run() {
+
+                var cc = document.getElementById('Canvas');
+                //cc.style.visibility = 'hidden';
+                var cctx = cc.getContext("2d");
+
+                loadExampleData()
+
+           
+
+                // Load web font
+                //currentwebfontlink.prop('href', currentfont);
+
+                // devicePixelRatio
+                var devicePixelRatio = parseInt(currentpixelratio);
+
+        
+                if (devicePixelRatio !== 1) {
+                    //$canvas.css({ 'width': width + 'px', 'height': height + 'px' });
+
+                    width *= devicePixelRatio;
+                    height *= devicePixelRatio;
+                } else {
+                    //$canvas.css({ 'width': '', 'height': '' });
+                }
+
+                cc.style.position = "absolute";
+                cc.width = width; //GetWidth();
+                cc.height = height; //GetHeight();
+                cc.style.top = 300 + "px";
+                cc.style.left = 300 + "px";
+
+                //$canvas.attr('width', width);
+                //$canvas.attr('height', height);
+
+                // Set the options object
+                var options = {};
+                if (currentoption) {
+                    options = (function evalOptions() {
+                        try {
+                            return eval('(' + currentoption + ')');
+                        } catch (error) {
+                            alert('The following Javascript error occurred in the option definition; all option will be ignored: \n\n' +
+                              error.toString());
+                            return {};
+                        }
+                    })();
+                }
+
+                // Set devicePixelRatio options
+                if (devicePixelRatio !== 1) {
+                    if (!('gridSize' in options)) {
+                        options.gridSize = 8;
+                    }
+                    options.gridSize *= devicePixelRatio;
+
+                    if (options.origin) {
+                        if (typeof options.origin[0] == 'number')
+                            options.origin[0] *= devicePixelRatio;
+                        if (typeof options.origin[1] == 'number')
+                            options.origin[1] *= devicePixelRatio;
+                    }
+
+                    if (!('weightFactor' in options)) {
+                        options.weightFactor = 1;
+                    }
+                    if (typeof options.weightFactor == 'function') {
+                        var origWeightFactor = options.weightFactor;
+                        options.weightFactor =
+                          function weightFactorDevicePixelRatioWrap() {
+                              return origWeightFactor.apply(this, arguments) * devicePixelRatio;
+                          };
+                    } else {
+                        options.weightFactor *= devicePixelRatio;
+                    }
+                }
+
+                // Put the word list into options
+                if (currentlist) {
+                    var list = [];
+                    //$.each(currentlist.split('\n'), function each(i, line) {
+                    //    if (!$.trim(line))
+                    //        return;
+
+                    //    var lineArr = line.split(' ');
+                    //    var count = parseFloat(lineArr.shift()) || 0;
+                    //    list.push([lineArr.join(' '), count]);
+                    //});
+                    list.push(["groener", 5]);
+                    list.push(["groen2", 7]);
+                    list.push(["groen3", 5]);
+                    list.push(["groener4", 10]);
+                    list.push(["groen", 10]);
+                    list.push(["groen2", 16]);
+                    list.push(["groener3", 14]);
+                    list.push(["groen4", 8]);
+                    list.push(["groen", 10]);
+                    list.push(["groen2", 12]);
+                    list.push(["groen3", 30]);
+                    list.push(["groen4", 9]);
+                    list.push(["groendener", 10]);
+                    list.push(["groen2", 20]);
+                    list.push(["groen3", 12]);
+                    list.push(["groen4", 12]);
+                    options.list = list;
+                }
+
+                // All set, call the WordCloud();
+                WordCloud(cc, options);
+
+                 
+            };
+
+            var loadExampleData = function loadExampleData() {
+                var example = {
+                    list: '26 Web Technologies\n20 HTML\n20 <canvas>\n' +
+                          '15 CSS\n15 JavaScript\n12 Document Object Model\n12 <audio>\n12 <video>\n12 Web Workers\n12 XMLHttpRequest\n12 SVG\n' +
+                          '9 JSON.parse()\n9 Geolocation\n9 data attribute\n9 transform\n9 transition\n9 animation\n' +
+                          '7 setTimeout\n7 @font-face\n7 Typed Arrays\n7 FileReader API\n7 FormData\n7 IndexedDB\n' +
+                          '7 getUserMedia()\n7 postMassage()\n7 CORS\n6 strict mode\n6 calc()\n6 supports()\n' +
+                          '6 media queries\n6 full screen\n6 notification\n6 orientation\n6 requestAnimationFrame\n' +
+                          '5 border-radius\n5 box-sizing\n5 rgba()\n5 text-shadow\n5 box-shadow\n5 flexbox\n5 viewpoint',
+                    option: '{\n' +
+                            '  gridSize: 12,\n' +
+                            '  weightFactor: 3,\n' +
+                            '  origin: [400, 200],\n' +   //center of canvas!!
+                            '  clearCanvas: true,\n' +
+                            '  fontFamily: \'Calibri\',\n' +
+                            '  color: \'#f0f0c0\',\n' +
+                            '  click: function(item) {\n' +
+                            '    alert(item[0] + \': \' + item[1]);\n' +
+                            '  },\n' +
+                            '  backgroundColor: \'#001f00\'\n' +
+                            '}',
+                    fontCSS: 'https://fonts.googleapis.com/css?family=Finger+Paint'
+                };
+
+
+
+
+                currentlist = example.list;
+                currentfont = example.fontCSS
+                currentoption = example.option
+                //currentwidth = example.width;
+                //currentheight = example.height;
+
+            };
+
+            loadExampleData(name);
+
+            var hashChanged = function hashChanged() {
+
+
+               // loadExampleData();
+                run();
+
+            }
+
+            //$(window).on('hashchange', hashChanged);
+
+          
+
+            hashChanged();
+
+            run();
+
+
+    </script>
+</body>
+</html>

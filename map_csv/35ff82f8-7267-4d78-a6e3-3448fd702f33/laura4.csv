@@ -1,0 +1,234 @@
+﻿empty project comparison with Sebastien  (Pn= 33)  (In= 190)
+Item N, paticipant N
+190,33,70,
+variables
+Modifiability,not at all,low,moderate,high,very high,
+Youths population-level effect,none,low,moderate,high,very high,
+Adults population-level effect,none,low,moderate,high,very high,
+Older adults population-level,none,low,moderate,high,very high,
+
+item number,item text
+1,1 Ability to use health care
+2,2 Availability of health care provision
+3,3 Access to garden
+4,4 Access to screen based devices (computer/computer/video games etc)
+5,5 Accessibility to the internet
+6,6 Acculturation
+7,7 Active transport policy
+8,8 Activities organised by memebers of own community
+9,9 Advertising
+10,10 Aesthetics of design
+11,11 Age
+12,12 Age at time of migration
+13,13 Ageism
+14,14 Awareness of consequences  parents/teachers/children/familly/personal
+15,15 Awareness of time spent sitting
+16,16 Behaviour of peers and friends
+17,17 Body composition (weight/muscle/fat)
+18,18 Body image
+19,19 Building design
+20,20 Burden of disease
+21,69 Green/blue areas
+22,70 Having a partner
+23,71 Having (grand) children
+24,72 Health insurance/cost
+25,73 Health status
+26,74 Identity
+27,75 Immigration history
+28,76 Impairment
+29,77 Income
+30,78 Increased cost of movement (moving  is energetically more demanding)?
+31,79 Inflation
+32,80 Influence of peers and friends
+33,81 Institutional policy
+34,82 Interest rate
+35,83 Job autonomy
+36,84 Karma/fatalism
+37,85 Language
+38,86 Leg power
+39,87 Life experience of PA
+40,88 Life satisfaction
+41,89 Living  space design (home/dwelling)
+42,90 Living with carer (parents included)
+43,91 Local authorities
+44,92 Locus of control
+45,93 Loneliness
+46,94 Media coverage portrayal of SB
+47,95 Medication
+48,96 Mental health
+49,97 Mobility issues
+50,98 Modelling the behaviour of others
+51,99 Mortgage cost
+52,100 National Government
+53,101 Necessity to use computer after work/school e.g. E-homework
+54,102 Neighbourhood nuissance (noise/pollution/degradation etc)
+55,103 Neighbourhood safety
+56,104 Neighbourhood walkability/cycle-ability
+57,105 Number of breaks during day occupation  (school/work)
+58,106 Number of kids in  the house
+59,107 Number of screens in dwelling place
+60,108 Occupation
+61,109 Outdoor playtime
+62,110 Over protecting peers/carers
+63,111 PA Guidelines
+64,112 PA level (past & present)
+65,113 Pain
+66,114 Peers (friends or colleagues)
+67,115 Pension
+68,116 Perceived health on the day
+69,117 Perceived safety from crime
+70,118 Personality
+71,119 Pet ownership
+72,120 Physical capacity/function
+73,121 Physical education
+74,122 Physical fitness/skills
+75,123 Physical organisation and furniture of place of education/work/care
+76,124 Political stability
+77,125 Popular culture
+78,126 Positive social norm to screen use
+79,127 Pregnancy
+80,128 Pressure (Academic/productivity)
+81,129 Productivity
+82,130 Provision of resting place
+83,131 Psychology (attitude/temperament/motivation)
+84,132 Public health Campaign
+85,133 Public open spaces
+86,134 Public transport
+87,135 Quality of life
+88,136 Recreational facilities
+89,137 Religious belief and practice
+90,138 Religiously required ways of dressing
+91,21 Busy lifestyle of carer
+92,22 Car ownerschip
+93,23 Car parking  possibilities
+94,24 Carer occupation
+95,25 Carer status (age/education/employment/training
+96,26 Carers TV viewing time
+97,27 Carers weight status
+98,28 Collectivist norms/attitudes
+99,29 Commitments to and within family/expectations
+100,30 Communication of healthcare practitioners
+101,31 Commuting distance of the carer
+102,32 Computer use in school/place of work
+103,33 Consumer Price Index
+104,34 Convenience of public transport
+105,35 Cultural background
+106,36 Cultural health beliefs about PA
+107,37 Cultural norms
+108,38 Cultural requirements
+109,39 Cultural view of leisure time
+110,40 Day of the week
+111,41 Depending on others
+112,42 Depression
+113,43 Design of public spaces
+114,44 Differences in preferred mode of transportation
+115,45 Disability
+116,46 Eating disorders
+117,47 Eating in front of TV
+118,48 Economic stability
+119,49 Economy
+120,50 Educational level
+121,51 Employment status
+122,52 Energy level
+123,53 Energy price
+124,54 Ethnicity
+125,55 Familly habits/modelling parents siblings
+126,56 Familly structure
+127,57 Family cohesion
+128,58 Family size
+129,59 Fashion
+130,60 Ffear of racism
+131,61 Flexibility  offo working hours
+132,62 Gas price
+133,63 Gender divide
+134,64 Generational divide
+135,65 Generational equality
+136,66 Genetic predisposition
+137,67 Geographical isolation
+138,68 Geriatric syndromes (pain/incontinence/fatigue/fear of falling/loss of strength)
+139,139 Retirement
+140,140 Risk adverse society
+141,141 Risk behaviours (alcohol/tobacco/drugs)
+142,142 Role/behaviour modelling
+143,143 Room (fresh air/temperature/light/music/colours/ furniture/comfortability/number of persons)
+144,144 Room temperature
+145,145 Rules regarding TV time/computer
+146,146 Rural living
+147,147 Safe surroundings
+148,148 Sarcopenia
+149,149 SB level (past & present )
+150,150 School attendance
+151,151 School satisfaction
+152,152 Season
+153,153 Seated exercise
+154,154 Seated hobbies
+155,155 Self-efficacy
+156,156 Self-esteem
+157,157 Self-rated health
+158,158 Sense of coherence
+159,159 SES
+160,160 Shift pattern  at work (eg night shift)
+161,161 Shower at work
+162,162 Sleeping time
+163,163 Snacking
+164,164 Social capital
+165,165 Social class
+166,166 Social desirability
+167,167 Social isolation
+168,168 Social media
+169,169 Social network
+170,170 Social Norms
+171,171 Social role (working/caring/volunteering)
+172,172 Social ties with home country (e.g. Watching homeland TV programmes)
+173,173 Societal financial resources
+174,174 Society/community social patterns
+175,175 Street ligthts
+176,176 Time with parents
+177,177 Topography
+178,178 Traffic safety
+179,179 Training of care providers
+180,180 Transport infrastructures
+181,181 TV in bedroom
+182,182 Type of housing
+183,183 Type of TV programmes
+184,184 Urban planning
+185,185 Values
+186,186 Vision (eye)
+187,187 Weather
+188,188 Women discouraged from leaving home unattained
+189,189 Work ethics
+190,190 Working culture and norms
+participant number,particpant name
+1,Luis,Rama,luisrama@fcdef.uc.pt,3acd58d9-3379-4027-b87a-4b11013b6aaf,9738e333-01dd-4830-afa1-8b111497baab,expert,,,,,sport sciences,University of Coimbra
+2,Ana,Teixeira,ateixeira@fcdef.uc.pt,40130704-8d25-4dbf-a9d9-7a695373bb2d,63ce086e-8ae3-416c-bd15-62bc16e33848,expert,,,,,exercise biochemistry,University of Coimbra
+3,LAURA,CAPRANICA,laura.capranica@uniroma4.it,fa03baac-d48f-43f7-aaaa-c903d448c16f,9246be44-23b1-41f4-94c1-c7d33061e707,,,,,,partner 126,UNIVERSITY OF ROME FORO ITALICO
+4,Ciaran,MacDonncha,Ciaran.MacDonncha@ul.ie,d2149d4f-2791-4af9-8c27-acaac448f574,255ce4d6-da6f-4e66-9c89-2f0f5cddd43d,,,,,,partner 260,University of Limerick
+5,Holger,Schulz,schulz@helmholtz-muenchen.de,78a3e18f-87fc-4ca0-88b9-ae9e3565930a,1f3f3430-874e-47c4-8050-d67d51e07dbd,,,,,,partner 155,Helmholtz Zentrum München
+6,Sylvia,Hansen,sylvia.hansen@inspo.uni-stuttgart.de,5ae42d19-9c47-4a78-b5df-d732e4e621d2,79b4658a-1734-4f88-bd7b-da110a661a62,,,,,,partner 57,university of stuttgard
+7,Gjakar,Masar,masar.gjaka@uni-pr.edu,074a96dd-9e1a-4f46-a929-f465cefc9441,566d457b-4ae7-4b18-bbb8-839afe2f8694,,,,,,partner 126,UNIVERSITY OF ROME FORO ITALICO
+8,Adrea,Di Blasio,andiblasio@gmail.com,fcc8b660-d143-4c46-9215-3f5d938b1ba6,9b8222d3-0297-4fd5-9191-802a3ca3f960,,,,,,partner 126,University of Palermo
+9,Marieke,De Craemer,marieke.decraemer@ugent.be,12356699-d5b0-4d41-af60-cdcf2f37a7c8,7c26b956-6ca0-432b-a067-7da1595bf5c1,,,,,,partner 113,University of Gent
+10,Daniele,Conte,danieleconte25@gmail.com,a2e75ae2-3fad-43a8-b7ed-1bf75bd246cc,9caba6ed-12d4-4494-877f-382dfd5fedcc,,,,,,partner 126,UNIVERSITY OF ROME FORO ITALICO
+11,Giancarlo,Condello,giancarlo.condello@uniroma4.it,829737ba-ea6a-4de8-bac0-af8b7ff70004,974e6ed6-5c67-4e57-b05e-dbef30b9e597,,,,,,partner 126,UNIVERSITY OF ROME FORO ITALICO
+12,Anna,Puggina,annapuggina@gmail.com,12c67d19-07d0-4856-a4a3-40e9aedd1651,5579d467-ad45-451e-9b3c-4ea7b2fba186,,,,,,partner 126,UCSC
+13,Alessandra,Sannella,alessandra.sannella@unicas.it,333e4d12-4f8c-413c-8d31-e43a4b8c5883,f9552c5c-52d1-4a1b-963a-3c1675910371,,,,,,partner 126,University of Cassino & LM
+14,Lina,Jaeschke,Lina.Jaeschke@mdc-berlin.de,ec848685-d5fc-41cc-b217-04105db94924,e96b90d5-fcf6-4b27-8ff2-b23c8f77c9f3,,,,,,partner 155,Max-Delbrück Center Berlin
+15,Antonino,Bianco,antonino.bianco@unipa.it,f1158708-3508-46ad-85b9-2842ba986570,663a8ba4-5a52-43f3-9775-d36abc1f71db,,,,,,partner 126,University of Palermo
+16,Astrid,chker,Astrid.Steinbrecher@mdc-berlin.de,caea8d21-2698-4a88-8b74-98de82bc5526,93b18f60-78fc-4e9a-814d-c96ad287a004,,,,,,partner 155,max-Delbrück Center Berlin
+17,Fiona,Ling,Fiona.Ling@ul.ie,975f40cb-0411-4d84-96e6-271bae5fef07,d70b929b-1622-45c0-a0d6-d9e492b9684b,,,,,,partner 260,University of Limerick
+18,Liliana,Leone,leone@cevas.it,a33ddd23-03f8-4fdc-8ed4-0ea4022d0b7a,045088bd-9b95-4628-83ad-45fe96278092,,,,,,Partner 126,CEVAS
+19,Angela,Polito,angela.polito@entecra.it,3ed83ffe-37e9-45af-b988-8e27528573b7,67433491-9473-4a54-9c53-a7b92e9346df,,,,,,partner 133,Entreca
+20,Caterina,Pesce,caterina.pesce@uniroma4.it,683ba988-d782-495b-b4cf-2890730f6aa2,015d0424-c256-4765-966f-5224a783ef52,,,,,,partner 126,UNIVERSITY OF ROME FORO ITALICO
+21,Silvia,Migliaccio,silvia.migliaccio@uniroma4.it,92563059-22b3-41ba-b99e-672aa6b3906d,d02c0301-8f2b-47ae-b166-ee9d04ccff81,,,,,,partner 126,UniVERSITY OF ROME FORO ITALICO
+22,Pascal,Izzicupo,pascalizzicupo@gmail.com,c51bd1d0-832c-4d79-b977-aba6037aa57f,a62fba7a-b245-4eb5-a26e-b910b264b811,,,,,,partner 126,University of Chieti
+23,Licia,Iacoviello,licia.iacoviello@moli-sani.org,903e8328-e7ed-4713-b5e9-140271377691,e59275a9-b30b-4a87-81e4-f82262687cbb,,,,,,partner 126,IRCCS
+24,Cristina,Cortis,c.cortis@unicas.it,7befafff-1eb6-4784-aa86-b0d0d6b3e0a8,9d991135-d69f-43a8-ada8-949e60e9c98d,,,,,,Partner 126,University of Cassino & LM
+25,PATRICIA,VANDEWALLE,PATricia.vandewalle@insep.fr,c95bb738-1907-41c5-8501-c37f081e8fd7,963e0e5a-31fd-4496-b4e1-6947c2e2199b,SPORT MANAGER,FRANCE,,,,EXPERT,INSEP
+26,VERONIQUE,LESEUR,VEROnique.leseur@insep.fr,2b7d6003-6372-498a-bd99-59fc0581959b,13985eec-ff41-42c0-a131-5a170b0599e5,SPORT MANAGER,FRANCE,,,,EXPERT,INSEP
+27,MOJCA,DOUPONA-TOPIC,MOJca.DouponaTopic@fsp.uni-lj.si,bc9c854a-b9c8-4138-9969-4acf3c109e09,8be5f91c-cd80-4ba6-af5f-424603ad9876,SPORT SOCIOLOGY,SLOVENIA,,,,EXPERT,university of lIJUBLIANA
+28,RISTO,KESKITALO,RISto.keskitalo@eduouka.fi,87813201-7ff6-4ad7-92d6-40fa23c3a8a1,34a9d62c-2ce8-4d39-a502-f3dc27a136b0,SPORT COACHING,FINLAND,,,,EXPERT,OULu sport academy
+29,OLE,KELDORF,oke@aarhus.dk,8483211b-6243-41b6-a0ad-00c3319a0a0d,8dc3a588-ee4a-4604-939a-90b1ecae6df2,COACHING AND TALENT,DENMARK,,,,EXPERT,AAHRUS ACADEMY OF SPORT
+30,TIBOR,KOSZLA,KOzsla@tf.hu,60f5c4fe-66a0-4eb2-8f58-2cb41fd3ad2c,79fa00ca-14b2-4f2f-990a-f5b4aed178c7,SPORT MANAGEMENT,HUNGARY,,,,EXPERT,UNIVERSITY OF PHYSICAL EDUCATION BUDAPEST
+31,JOERG,FOERRSTER,JOerg.Foerster@fu-berlin.de,1ee231f9-89e9-431d-9ffb-5079d8878a95,de5d1f14-1f7c-4f37-a9f2-2909f92a233a,SPORT MANAGEMENT,GERMANY,,,,EXPERT,FREI UNIVERTITAT BERLIN
+32,ILVIS,ABELKANS,Ilvis@inbox.lv,0b3189fc-1718-464b-babe-62f01b544ad8,c7466db5-c1fc-4a5f-a1dd-6c48184e2e8f,sport sciences,Latvia,,,,expert,UNIVERSITY OF LATVIA
+33,Donatella,Ciarapica,donatella.ciarapica@entecra.it,a434e6c8-3f5d-401b-a459-caa119b075e0,bb066e75-406b-44a7-8e5f-60d5fc25fe07,,,,,,Nutrition,Partner 133
