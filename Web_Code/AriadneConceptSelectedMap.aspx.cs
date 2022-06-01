@@ -933,7 +933,7 @@ public partial class ariadneConceptSelectedMap : System.Web.UI.Page
                         tt = ",,";
                         for (int r = 1; r < 5 + 1; r++)
                         {
-                            tt += arst.clusterRatesAggr2[clusterSaveN, g, r].ToString("0.00", CultureInfo.InvariantCulture) + ",";
+                            tt += arst.clusterRatesAggr2[c, g, r].ToString("0.00", CultureInfo.InvariantCulture) + ",";
                         }
                         sb.AppendLine(tt);
                         tt = "item number,item,rate1,rate2,rate3,rate4,rate5";
@@ -947,7 +947,7 @@ public partial class ariadneConceptSelectedMap : System.Web.UI.Page
                             tt += '"' + itemremovedBreaks.Trim() + '"' + ","; ;
                             for (int r = 1; r < 5 + 1; r++)
                             {
-                                tt += arst.ratesAggr[i, r].ToString() + ",";
+                                tt += arst.ratesAggr[arst.clusterItem2[c, g, i], r].ToString() + ",";
                                 //tt += arst.ratesSTDV[i, r].ToString("0.00000", CultureInfo.InvariantCulture) + ",";
                             }
 
