@@ -1,5 +1,10 @@
 # ariadne-for-concept-mapping
 
+Scope
+
+- Research in social siences (a.o. Psychological Care, Addiction Treatment, Human Movement Sciences) 
+- Marketing (a.o. Branding Research, Customer Care Optimization)
+
 Ariadne explained
 
 Concept mapping is a statistical technique to unravel difficult constructs like ‘quality of service’, ‘best practices in care’, ‘brand image’ or ‘product proposition’. Expert or client opinions’ are combined to get insight into the common view towards a specific construct as it is seen by the group as a whole.
