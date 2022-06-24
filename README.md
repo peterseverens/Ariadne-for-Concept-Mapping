@@ -1,5 +1,7 @@
 # ariadne-for-concept-mapping
 
+This software is an exact copy of the application hosted on Minds21.org. This website will close in the near future. To continue with your projects Deploy the software on an application server on by example Microsoft Azure or Amazon Web Services and you have your own Concept Mapping service for your entire organization.
+
 Scope
 
 - Research in social siences (a.o. Psychological Care, Addiction Treatment, Human Movement Sciences) 
